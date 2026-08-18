@@ -1,12 +1,10 @@
+// settings.gradle.kts - build-logic
+// Copyright (c) 2026. All rights reserved
+rootProject.name = "build-logic"
+
 dependencyResolutionManagement {
     repositories {
-        google {
-            mavenContent {
-                includeGroupAndSubgroups("androidx")
-                includeGroupAndSubgroups("com.android")
-                includeGroupAndSubgroups("com.google")
-            }
-        }
+        google()
         mavenCentral()
         gradlePluginPortal()
     }
@@ -17,5 +15,4 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "build-logic"
 include(":convention")

@@ -1,2 +1,17 @@
-// Shared configuration lives in build-logic/ as convention plugins; each module
-// applies the one it needs. Nothing to declare here.
+// build.gradle - Kmp Project
+// Copyright (c) 2026. All rights reserved
+plugins {
+    // This is necessary to avoid the plugins to be loaded multiple times
+    // In each subproject's classloader
+    alias(libs.plugins.androidApplication) apply false
+    alias(libs.plugins.androidMultiplatformLibrary) apply false
+    alias(libs.plugins.composeMultiplatform) apply false
+    alias(libs.plugins.composeCompiler) apply false
+    alias(libs.plugins.kotlinMultiplatform) apply false
+    alias(libs.plugins.kotlinAndroid) apply false
+    alias(libs.plugins.android.lint) apply false
+    alias(libs.plugins.jetbrains.kotlin.jvm) apply false
+    alias(libs.plugins.buildKonfig) apply false
+    alias(libs.plugins.google.services) apply false
+    alias(libs.plugins.firebase.crashlytics) apply false
+}

@@ -1,14 +1,32 @@
+// build.gradle - Kmp build-logic:convention
+// Copyright (c) 2026. All rights reserved
 plugins {
     `kotlin-dsl`
 }
 
 group = "com.software.inventario.buildlogic"
 
+kotlin {
+    jvmToolchain(jdkVersion = 21)
+}
+
 dependencies {
-    // Put the Gradle plugins on the compile classpath so the precompiled script
-    // plugins in src/main/kotlin can apply and configure them.
-    implementation(libs.android.gradlePlugin)
-    implementation(libs.kotlin.gradlePlugin)
-    implementation(libs.compose.gradlePlugin)
-    implementation(libs.composeCompiler.gradlePlugin)
+    compileOnly(libs.android.gradle.convention)
+    compileOnly(libs.kotlin.gradlePlugin)
+}
+
+tasks {
+    validatePlugins {
+        enableStricterValidation = true
+        failOnWarning = true
+    }
+}
+
+gradlePlugin {
+    plugins {
+        register("kmpCommonVersion") {
+            id = "com.kmp.commonversion"
+            implementationClass = "plugins.kommonsVersions.KommonVersionExtension"
+        }
+    }
 }

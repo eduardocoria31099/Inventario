@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- None -->
+    <string name="idle">Idle</string>
+    <string name="na">N/A</string>
+    <string name="example">Example</string>
+
+    <!-- String -->
+    <string name="app_info_body">App ID: %1$s\nBuild Type: %2$s\nVersion Code: %3$d\nVersion Name: %4$s</string>
+    <string name="name_arg">Name: %1$s</string>
+    <string name="email_arg">Email: %1$s</string>
+    <string name="fan_progress_arg">Speed Fan - %%1$s</string>
+
+    <!-- App -->
+    <string name="version_app">Version App</string>
+
+    <!-- Error -->
+    <string name="please_try_again_later">Something went wrong, please try again later</string>
+    <string name="warning">Warning</string>
+    <string name="empty_list">Empty list</string>
+    <string name="you_dont_have_users">You dont have users</string>
+    <string name="you_dont_have_packages">You dont have Packages</string>
+    <string name="reload">Reload</string>
+    <string name="no_wifi">No wifi</string>
+    <string name="you_dont_have_wifi">You dont have internet connection</string>
+    <string name="wrong_credentials">Wrong credentials</string>
+
+    <!-- Description -->
+    <string name="image">Image</string>
+
+    <!-- Description -->
+    <string name="explore_our_multiplatform_platform">Explore our multi platform</string>
+    <string name="next">next</string>
+    <string name="accept">Accept</string>
+    <string name="hello">Hello</string>
+
+</resources>

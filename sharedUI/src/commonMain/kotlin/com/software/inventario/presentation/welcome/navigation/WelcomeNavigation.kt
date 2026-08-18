@@ -1,0 +1,21 @@
+/*
+ * WelcomeNavigation.kt
+ * Copyright (c) 2026. All rights reserved
+ */
+package com.software.inventario.presentation.welcome.navigation
+
+import androidx.compose.runtime.Composable
+import cafe.adriel.voyager.core.screen.Screen
+import cafe.adriel.voyager.navigator.LocalNavigator
+import cafe.adriel.voyager.navigator.currentOrThrow
+import com.software.inventario.presentation.welcome.ui.WelcomeScreen
+
+data object WelcomeScreenInstance : Screen {
+    @Composable
+    override fun Content() {
+        val navigator = LocalNavigator.currentOrThrow
+        WelcomeScreen(
+            onNavigateToLogin = {},
+        )
+    }
+}
