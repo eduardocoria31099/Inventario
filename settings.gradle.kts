@@ -1,6 +1,7 @@
 rootProject.name = "Inventario"
 
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         google {
             mavenContent {
@@ -28,4 +29,5 @@ dependencyResolutionManagement {
 }
 
 include(":androidApp")
-include(":shared")
+include(":sharedLogic")
+include(":sharedUI")

@@ -16,8 +16,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import org.jetbrains.compose.resources.painterResource
 
-import inventario.shared.generated.resources.Res
-import inventario.shared.generated.resources.compose_multiplatform
+import com.software.inventario.resources.Res
+import com.software.inventario.resources.compose_multiplatform
 
 @Composable
 @Preview
