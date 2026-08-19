@@ -15,16 +15,13 @@ jvm-compileVersion = "21"
 lib-androidx-activity = "1.13.0"
 lib-androidx-appcompat = "1.8.0"
 lib-androidx-core = "1.19.0"
-lib-lifecycle-viewmodel = "2.11.0"
-lib-lifecycle-viewmodel-compose = "2.11.0"
-lifecycle-runtime-compose = "2.11.0"
 lib-androidx-navigation = "2.9.2"
 lib-ui-tooling = "1.11.1"
 lib-compose-material3 = "1.9.0"
 lib-mokoPermissions-compose = "0.20.1"
 lib-junit = "4.13.2"
 lib-splashscreen = "1.2.0"
-lib-material = "1.12.0"
+lib-material = "1.14.0"
 lib-koin = "4.2.2"
 lib-ktor = "3.5.2"
 lib-ktor-okhttp = "3.5.2"
@@ -69,9 +66,6 @@ jetbrainsKotlinJvm = "2.4.10"
 androidx-core-ktx                     = { module = "androidx.core:core-ktx", version.ref = "lib-androidx-core" }
 androidx-appcompat                    = { module = "androidx.appcompat:appcompat", version.ref = "lib-androidx-appcompat" }
 androidx-activity-compose             = { module = "androidx.activity:activity-compose", version.ref = "lib-androidx-activity" }
-androidx-lifecycle-viewmodel          = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel", version.ref = "lib-lifecycle-viewmodel" }
-androidx-lifecycle-viewmodel-compose  = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lib-lifecycle-viewmodel-compose" }
-androidx-lifecycle-runtime-compose    = { module = "org.jetbrains.androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle-runtime-compose" }
 androidx-navigation-compose           = { module = "org.jetbrains.androidx.navigation:navigation-compose", version.ref = "lib-androidx-navigation" }
 androidx-splashscreen                 = { module = "androidx.core:core-splashscreen", version.ref = "lib-splashscreen" }
 google-material                       = { module = "com.google.android.material:material", version.ref = "lib-material" }
@@ -231,10 +225,6 @@ sharedUI-commonsTest-libs = [
     'kotlin-test',
 ]
 sharedLogic-commons-libs = [
-    # Lifecycle
-    'androidx-lifecycle-viewmodel',
-    'androidx-lifecycle-viewmodel-compose',
-    'androidx-lifecycle-runtime-compose',
     # DI Core
     'koin-core',
     # Network
